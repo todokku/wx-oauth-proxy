@@ -41,7 +41,7 @@ router.get('/code/v1', ctx => {
     if (code === undefined) {
         // 项目部署后的域名
         let redirectUrl = "http://wx-auth-proxy.frp.zxk175.com/code/v1" + queryString;
-        fullUrl = oauthUrlForCode("xxx", redirectUrl);
+        fullUrl = oauthUrlForCode("eporner", redirectUrl);
     } else {
         let redirectUrl = redirectUrlMap[auk];
         fullUrl = `${redirectUrl}${queryString}`;
